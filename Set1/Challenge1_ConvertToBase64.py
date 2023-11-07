@@ -5,7 +5,8 @@ base64_string = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29
 
 # 将hex转换成bytes
 bit_string = bytes.fromhex(hex_string)
-# 将转换成的bytes进行Base64编码，再用“utf-8”解码，便于比较是否转换正确
-base64_string2 = base64.b64encode(bit_string).decode('utf-8')
-
+# 将转换成的bytes进行Base64编码，再用“ASCII”解码，便于比较是否转换正确
+print(base64.b64encode(bit_string))
+base64_string2 = base64.b64encode(bit_string).decode('ASCII')
 print(base64_string == base64_string2)
+
