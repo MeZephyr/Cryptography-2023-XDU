@@ -4,11 +4,14 @@ target_string = "0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226
 
 
 def repeating_xor(text: bytes, key: bytes) -> bytes:
+    # 明文长度除以密钥长度，得到商和余数，便于扩展密钥长度
     quotient, remainder = divmod(len(text), len(key))
     key_extend = bytes(key * quotient + key[:remainder])
+    # 逐个字节异或
     return bytes([x ^ y for x, y in zip(text, key_extend)])
 
 
+# 先把字符串编码成字节串
 byte_string = plaintext.encode()
 byte_Key = key.encode()
 
