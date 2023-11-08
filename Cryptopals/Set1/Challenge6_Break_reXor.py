@@ -1,5 +1,5 @@
 from base64 import b64decode
-import Letter_frequencies as lf
+import Challenge3_SingleByteXor as lf
 from Challenge5_repeatingXor import repeating_xor
 
 with open('6.txt', 'r') as file:

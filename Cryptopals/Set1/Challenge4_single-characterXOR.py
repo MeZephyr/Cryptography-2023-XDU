@@ -1,4 +1,4 @@
-import Letter_frequencies as lf
+import Challenge3_SingleByteXor as lf
 
 
 with open('4.txt', 'r') as file:
