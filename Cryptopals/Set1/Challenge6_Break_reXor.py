@@ -50,6 +50,7 @@ keySize = get_keySize(decoded_data)
 cipherChunks = [decoded_data[i:i + keySize] for i in range(0, len(decoded_data), keySize)]
 # 为了保持每个块长度一致，我们可以去掉最后一块，这没有影响
 cipherChunks.pop()
+print(cipherChunks)
 num_of_chunks = len(cipherChunks)
 # 解出密钥
 key = ""
