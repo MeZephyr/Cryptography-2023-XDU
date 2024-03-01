@@ -1,2 +1,3 @@
 # Cryptography-2023-XDU
-This is a repository for Cryptography, which is used for store code.
+- 这个是39班现代密码学实验的完整代码
+- 部分解析放在了这里https://zephyrryan.github.io/
